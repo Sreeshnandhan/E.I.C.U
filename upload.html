@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Upload</title>
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="upload-container">
+
+        <style>
+            body {
+              background-image: url('images/tape.jpg');
+            }
+            </style>
+        
+
+        <h1>Upload Your Film Clip</h1>
+        <form action="up.php" method="post" enctype="multipart/form-data" id="upload-form">
+            <input type="file" name="file" id="file-input">
+            <textarea name="des" id="description" placeholder="Enter a description for your clip..."></textarea>
+            <button type="submit">Upload</button>
+            <div id="loading-container" style="display: none;">
+                <div class="film-reel"></div>
+                <div class="film-strip"></div>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
